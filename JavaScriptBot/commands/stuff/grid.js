@@ -78,13 +78,11 @@ class  Grid extends commando.Command {
 		
 		
 		for(var y=letter.length-1;y<complete.length;y+=(letter.length-1)*2){
-			console.log(x);
 			for(var x=0;x<complete[y].length;x++){
 				complete[y][x] = line[x];
 			}
 		}
 		for(var y=0;y<complete.length;y+=(letter.length-1)*2){
-			console.log(x);
 			for(var x=0;x<complete[y].length;x++){
 				complete[y][x] = rline[x];
 			}

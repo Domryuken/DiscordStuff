@@ -10,7 +10,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message', message => {
-  if (message.member.roles.has(message.guild.roles.find("name", stuff.reee).id)) {
+  if (message.member.roles.has(message.guild.roles.find("name", stuff.reee).id)&&(!message.author.bot)) {
     message.channel.send("**" + message.author.username + " says**\nREEEEEEEEEEEE " + message.content + " REEEEEEEEEEEEEE");
     message.delete();
   }
