@@ -73,7 +73,7 @@ class Vs extends commando.Command {
 		else
 			string = attacker.toUpperCase() + " vs " + type1.toUpperCase() + "/" + type2.toUpperCase() + " has an attack modifier of " + firstCalc * secondCalc;
         message.reply("\n"+string);
-
+        message.delete();
     }
 
 }

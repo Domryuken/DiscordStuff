@@ -110,6 +110,7 @@ class  Grid extends commando.Command {
 		}
 
         message.reply("```"+ string+"```");
+		message.delete();
     }
 
 }
