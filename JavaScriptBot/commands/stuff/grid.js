@@ -11,17 +11,17 @@ class  Grid extends commando.Command {
             args: [
                 {
                     key: "word",
-                    prompt: "word to be used",
+                    prompt: "word to be used?",
                     type: "string"
                 },
                 {
                     key: "height",
-                    prompt: "What height",
+                    prompt: "What height?",
                     type: "string"
                 },
                 {
                     key: "width",
-                    prompt: "What width",
+                    prompt: "What width?",
                     type: "string"
                 }
             ]

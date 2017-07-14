@@ -1,7 +1,7 @@
 const commando = require("discord.js-commando");
 const stuff = require('./JavaScriptBotStuff');
 // const bot = new commando.Client();
-const bot = new commando.Client({ id:'id', commandPrefix:'{'});
+const bot = new commando.Client({ id:'id', commandPrefix:'}{'});
 
 bot.registry.registerGroup("stuff", "Stuff")
 bot.registry.registerDefaults();

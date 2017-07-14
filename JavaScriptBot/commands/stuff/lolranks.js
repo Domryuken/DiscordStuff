@@ -24,11 +24,15 @@ class Lol extends commando.Command {
         message.delete();
         message.reply("");
         let search = args.toString().split(" - ");
+
         let getId = function (callback, summoner) {
             let url = idurl + summoner.toLowerCase() + stuff.riot;
             request(url, function (error, response, body) {
-                var id = JSON.parse(body)[summoner.toLowerCase()]["id"];
-                callback(id,summoner);
+                console.log(body);
+                if(JSON.parse(body)[summoner.toLowerCase()]){
+                    var id = JSON.parse(body)[summoner.toLowerCase()]["id"];
+                    callback(id,summoner);
+                }else{message.channel.send("Whaa...?")}
             });
         }
 
