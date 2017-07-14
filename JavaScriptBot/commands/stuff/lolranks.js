@@ -28,7 +28,6 @@ class Lol extends commando.Command {
         let getId = function (callback, summoner) {
             let url = idurl + summoner.toLowerCase() + stuff.riot;
             request(url, function (error, response, body) {
-                console.log(body);
                 if(JSON.parse(body)[summoner.toLowerCase()]){
                     var id = JSON.parse(body)[summoner.toLowerCase()]["id"];
                     callback(id,summoner);
